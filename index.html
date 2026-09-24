@@ -1,457 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Sylvia Zeng | Personal Portfolio</title>
-
-  <style>
-
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f7f8fa;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    /* Navigation */
-    nav {
-      background-color: #1f2937;
-      padding: 18px 30px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 18px;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Header */
-    header {
-      background: linear-gradient(135deg, #1f2937, #4b5563);
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    .headshot {
-      width: 170px;
-      height: 170px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid white;
-      margin-bottom: 20px;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.3);
-    }
-
-    header h1 {
-      margin: 5px 0;
-      font-size: 48px;
-    }
-
-    header h2 {
-      margin: 8px 0;
-      font-size: 21px;
-      font-weight: normal;
-    }
-
-    .statement {
-      max-width: 750px;
-      margin: 25px auto 0;
-      font-size: 18px;
-    }
-
-    /* General Sections */
-    section {
-      max-width: 1000px;
-      margin: 65px auto;
-      padding: 0 25px;
-    }
-
-    .section-title {
-      font-size: 30px;
-      margin-bottom: 30px;
-      border-bottom: 3px solid #1f2937;
-      padding-bottom: 8px;
-    }
-
-    /* GIF Section */
-    .gif-container {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .gif-container img {
-      max-width: 500px;
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.12);
-    }
-
-    /* Skills */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .skill {
-      background: white;
-      padding: 11px 18px;
-      border-radius: 25px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      transition: 0.3s ease;
-    }
-
-    .skill:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 14px rgba(0,0,0,0.15);
-    }
-
-    /* Projects */
-    .projects {
-      display: grid;
-      gap: 25px;
-    }
-
-    .project {
-      background-color: white;
-      padding: 28px;
-      border-radius: 15px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-      transition: 0.3s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    }
-
-    .project h3 {
-      margin-top: 0;
-      font-size: 23px;
-      color: #1f2937;
-    }
-
-    .project strong {
-      color: #4b5563;
-    }
-
-    /* Contact */
-    .contact {
-      text-align: center;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 18px;
-      background-color: #1f2937;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s ease;
-    }
-
-    .contact a:hover {
-      background-color: #4b5563;
-      transform: translateY(-3px);
-    }
-
-    /* Footer */
-    footer {
-      background-color: #1f2937;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      margin-top: 60px;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    section {
-      animation: fadeUp 1s ease;
-    }
-
-    /* Mobile */
-    @media (max-width: 600px) {
-
-      header h1 {
-        font-size: 36px;
-      }
-
-      nav a {
-        margin: 0 8px;
-        font-size: 14px;
-      }
-
-      .headshot {
-        width: 140px;
-        height: 140px;
-      }
-
-    }
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+            max-width: 900px;
+            margin: auto;
+            color: #333;
+        }
+        header {
+            padding: 40px 0 20px 0;
+            border-bottom: 2px solid #eaeaea;
+            text-align: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 15px;
+        }
+        h1 {
+            margin: 10px 0;
+        }
+        .personal-statement {
+            font-size: 1.05em;
+            max-width: 750px;
+            margin: 15px auto 0 auto;
+            color: #555;
+            text-align: left;
+        }
+        section {
+            margin: 30px 0;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        ul.skills-list {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #007acc;
+            border-radius: 4px;
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
-
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-
-  <!-- Header -->
-  <header id="about">
-
-    <img
-      src="headshot.jpg"
-      alt="Sylvia Zeng Headshot"
-      class="headshot"
-    >
-
-    <h1>Sylvia Zeng</h1>
-
-    <h2>
-      Marketing Student at Rutgers Business School
-    </h2>
-
-    <div class="statement">
-
-      I’m a Marketing student at Rutgers Business School with interests in
-      branding, e-commerce, digital marketing, and consumer behavior.
-
-    </div>
-
-  </header>
-
-
-  <!-- Animated GIF -->
-  <section>
-
-    <h2 class="section-title">Welcome to My Portfolio</h2>
-
-    <div class="gif-container">
-
-      <img
-        src="animation.gif"
-        alt="Portfolio Animation"
-      >
-
-    </div>
-
-  </section>
-
-
-  <!-- Skills -->
-  <section id="skills">
-
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills">
-
-      <div class="skill">Digital Marketing</div>
-
-      <div class="skill">Brand Strategy</div>
-
-      <div class="skill">Consumer Research</div>
-
-      <div class="skill">E-commerce</div>
-
-      <div class="skill">SEO & Keyword Research</div>
-
-      <div class="skill">Market Analysis</div>
-
-      <div class="skill">Competitor Analysis</div>
-
-      <div class="skill">Amazon Seller Central</div>
-
-      <div class="skill">Seller Sprite</div>
-
-      <div class="skill">Microsoft Excel</div>
-
-      <div class="skill">Canva</div>
-
-      <div class="skill">Leadership</div>
-
-    </div>
-
-  </section>
-
-
-  <!-- Projects -->
-  <section id="projects">
-
-    <h2 class="section-title">Projects</h2>
-
-    <div class="projects">
-
-
-      <!-- Project 1 -->
-      <div class="project">
-
-        <h3>Amazon E-commerce & SEO Project</h3>
-
-        <p>
-          Conducted keyword and competitor research using Seller Sprite
-          and Amazon marketplace data. Analyzed traffic share, ABA rankings,
-          monthly search volume, PPC costs, and product relevance to narrow
-          more than 100 search terms into approximately 10 high-priority keywords.
-        </p>
-
-        <p>
-          Created SEO-optimized titles, bullet points, product descriptions,
-          and keyword placements for Amazon furniture listings.
-        </p>
-
-        <strong>
-          Skills: E-commerce, SEO, Keyword Research, Competitor Analysis
-        </strong>
-
-      </div>
-
-
-      <!-- Project 2 -->
-      <div class="project">
-
-        <h3>Lumea Brand & Social Media Campaign</h3>
-
-        <p>
-          Developed a brand identity and digital marketing campaign for
-          Lumea's "Shine On" tote bag.
-        </p>
-
-        <p>
-          Created a social media strategy focused on user-generated content,
-          customer participation, and community engagement to explore how
-          digital content can strengthen relationships between customers
-          and brands.
-        </p>
-
-        <strong>
-          Skills: Branding, Social Media Marketing, Content Strategy,
-          Community Building
-        </strong>
-
-      </div>
-
-
-      <!-- Project 3 -->
-      <div class="project">
-
-        <h3>Digital Marketing Research Project</h3>
-
-        <p>
-          Conducted a comparative research study on traditional marketing
-          and digital marketing, focusing on communication style,
-          consumer behavior, cost structure, and market responsiveness.
-        </p>
-
-        <p>
-          Used case studies of Coca-Cola and Shein to analyze real-world
-          marketing strategies, brand positioning, personalization,
-          and data-driven decision making.
-        </p>
-
-        <strong>
-          Skills: Marketing Research, Consumer Behavior,
-          Brand Strategy, Market Analysis
-        </strong>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-
-    <h2 class="section-title">Let's Connect</h2>
-
-    <p>
-      Interested in marketing, branding, e-commerce, and opportunities
-      to learn and collaborate.
-    </p>
-
-    <a
-      href="https://github.com/Ziliang25843"
-      target="_blank"
-    >
-      GitHub
-    </a>
-
-    <a
-      href="https://www.linkedin.com/in/sylvia-zeng-49301531b"
-      target="_blank"
-    >
-      LinkedIn
-    </a>
-
-  </section>
-
-
-  <!-- Footer -->
-  <footer>
-
-    <p>
-      Sylvia Zeng | Rutgers Business School
-    </p>
-
-    <p>
-      © 2026 Sylvia Zeng
-    </p>
-
-  </footer>
-
+    <header>
+        <!-- 头像展示 -->
+        <img src="headshot.jpeg" alt="Profile Picture" class="profile-img">
+        
+        <h1>Your Name</h1>
+
+        <!-- 1. Personal Statement -->
+        <div class="personal-statement">
+            <p><strong>Personal Statement:</strong> Bridging technology, global logistics, and strategic analysis, I transform complex data into actionable digital solutions and streamlined operational systems.</p>
+        </div>
+    </header>
+
+    <!-- 2. Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li><strong>Web Development & Programming:</strong> HTML5, CSS3, JavaScript (DOM Manipulation, Parallel Arrays, Event Handling)</li>
+            <li><strong>Data & Domain Analysis:</strong> Data Visualization Ethics, Supply Chain & International Trade Analysis, Quantitative Modeling</li>
+            <li><strong>Tools & Platforms:</strong> Git, GitHub, VS Code, Web Performance Optimization</li>
+        </ul>
+    </section>
+
+    <!-- 3. Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Web-Based Transportation Price Calculator</h3>
+            <p>Built a dynamic web application that calculates and compares travel costs across multi-modal transit options in real-time, helping users make cost-effective commuting choices instantly.</p>
+            <p><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript</p>
+            <p><a href="https://github.com/YOUR_GITHUB_USERNAME/transportation-calculator" target="_blank">View Code on GitHub</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Soccer Tournament Data Processor</h3>
+            <p>Engineered a JavaScript data-processing program utilizing parallel arrays to automatically compute team rankings, point tally distributions, and real-time performance metrics for sports tournaments.</p>
+            <p><strong>Tech Stack:</strong> JavaScript, Parallel Arrays, Data Processing Logic</p>
+            <p><a href="https://github.com/YOUR_GITHUB_USERNAME/soccer-tournament-processor" target="_blank">View Code on GitHub</a></p>
+        </div>
+
+        <div class="project">
+            <h3>Global Supply Chain & Tech Relocation Analysis</h3>
+            <p>Analyzed macro-environmental shifts and supply chain realignments across Southeast Asia, exploring how electronics manufacturing hubs adapt to shifting tariffs and labor market dynamics.</p>
+            <p><strong>Focus Areas:</strong> International Business, Supply Chain Management, Market Analysis</p>
+            <p><a href="https://github.com/YOUR_GITHUB_USERNAME/supply-chain-analysis" target="_blank">View Article / Presentation</a></p>
+        </div>
+    </section>
 
 </body>
-
 </html>
