@@ -3,61 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Ziliang Zeng - Personal Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 0 20px;
-            max-width: 900px;
-            margin: auto;
+            padding: 20px;
             color: #333;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f9f9f9;
         }
         header {
-            padding: 40px 0 20px 0;
-            border-bottom: 2px solid #eaeaea;
             text-align: center;
+            padding: 30px 20px;
+            background-color: #ffffff;
+            border-bottom: 2px solid #007acc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             margin-bottom: 15px;
+            border: 3px solid #007acc;
         }
         h1 {
-            margin: 10px 0;
+            margin: 10px 0 5px 0;
+            color: #007acc;
         }
-        .personal-statement {
-            font-size: 1.05em;
-            max-width: 750px;
-            margin: 15px auto 0 auto;
+        .bio {
+            max-width: 700px;
+            margin: 0 auto;
             color: #555;
-            text-align: left;
+            font-size: 1.05em;
         }
         section {
-            margin: 30px 0;
+            background-color: #ffffff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
         h2 {
-            color: #2c3e50;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+            color: #007acc;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+            margin-top: 0;
         }
-        ul.skills-list {
-            list-style-type: square;
+        ul {
+            line-height: 1.8;
             padding-left: 20px;
         }
         .project {
             margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f9f9f9;
+            padding: 15px 20px;
+            background-color: #fdfdfd;
             border-left: 4px solid #007acc;
             border-radius: 4px;
         }
         .project h3 {
             margin-top: 0;
+            color: #222;
         }
         a {
             color: #007acc;
@@ -71,50 +83,45 @@
 <body>
 
     <header>
-        <!-- 头像展示 -->
-       <img src="headshot.jpeg" alt="Profile Picture" class="profile-img">
+        <!-- 头像图片 -->
+        <img src="headshot.jpeg" alt="Ziliang Zeng" class="profile-img">
         
-        <h1>Your Name</h1>
+        <h1>Ziliang Zeng</h1>
 
-        <!-- 1. Personal Statement -->
-        <div class="personal-statement">
-            <p><strong>Personal Statement:</strong> Bridging technology, global logistics, and strategic analysis, I transform complex data into actionable digital solutions and streamlined operational systems.</p>
+        <div class="bio">
+            <p><strong>Personal Statement:</strong> Marketing student at Rutgers Business School with practical experience in consumer equity research, e-commerce listing optimization, and digital marketing strategy. Passionate about leveraging data-driven market analysis to create high-impact business solutions.</p>
         </div>
     </header>
 
-    <!-- 2. Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li><strong>Web Development & Programming:</strong> HTML5, CSS3, JavaScript (DOM Manipulation, Parallel Arrays, Event Handling)</li>
-            <li><strong>Data & Domain Analysis:</strong> Data Visualization Ethics, Supply Chain & International Trade Analysis, Quantitative Modeling</li>
-            <li><strong>Tools & Platforms:</strong> Git, GitHub, VS Code, Web Performance Optimization</li>
+    <section>
+        <h2>Skills & Qualifications</h2>
+        <ul>
+            <li><strong>Marketing & E-Commerce:</strong> Amazon SEO & Keyword Optimization (Seller Sprite), Listing Copywriting, Consumer Behavior Analysis</li>
+            <li><strong>Financial & Industry Analysis:</strong> Equity Research, Annual Report Analysis, Industry Trend Analysis, Business Presentations</li>
+            <li><strong>Technical & Analytical Tools:</strong> HTML5, CSS3, JavaScript, Data & Domain Analysis, Git & GitHub</li>
+            <li><strong>Leadership & Organization:</strong> Event Planning & Execution, Team Management, Cross-Functional Communication</li>
         </ul>
     </section>
 
-    <!-- 3. Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
+    <section>
+        <h2>Featured Projects & Experience</h2>
 
         <div class="project">
-            <h3>Web-Based Transportation Price Calculator</h3>
-            <p>Built a dynamic web application that calculates and compares travel costs across multi-modal transit options in real-time, helping users make cost-effective commuting choices instantly.</p>
-            <p><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript</p>
-            <p><a href="https://github.com/YOUR_GITHUB_USERNAME/transportation-calculator" target="_blank">View Code on GitHub</a></p>
+            <h3>E-Commerce Amazon Keyword & Competitor Analysis</h3>
+            <p>Conducted traffic and keyword research using Seller Sprite to optimize SEO listings for home decor products. Analyzed search volumes, PPC costs, and consumer search intent to improve product discoverability on Amazon.</p>
+            <p><strong>Key Skills:</strong> Amazon SEO, Keyword Optimization, Competitor Research, E-Commerce Strategy</p>
         </div>
 
         <div class="project">
-            <h3>Soccer Tournament Data Processor</h3>
-            <p>Engineered a JavaScript data-processing program utilizing parallel arrays to automatically compute team rankings, point tally distributions, and real-time performance metrics for sports tournaments.</p>
-            <p><strong>Tech Stack:</strong> JavaScript, Parallel Arrays, Data Processing Logic</p>
-            <p><a href="https://github.com/YOUR_GITHUB_USERNAME/soccer-tournament-processor" target="_blank">View Code on GitHub</a></p>
+            <h3>New Consumption Equity & Market Research</h3>
+            <p>Performed comparative equity research within the new consumption sector at China Merchants Securities. Analyzed fundamentals, consumer trends, and market drivers for companies including LaoPu Gold, designer toys, and snack retail chains.</p>
+            <p><strong>Key Skills:</strong> Equity Analysis, Industry Benchmarking, Financial Statement Review, Business Presentation</p>
         </div>
 
         <div class="project">
-            <h3>Global Supply Chain & Tech Relocation Analysis</h3>
-            <p>Analyzed macro-environmental shifts and supply chain realignments across Southeast Asia, exploring how electronics manufacturing hubs adapt to shifting tariffs and labor market dynamics.</p>
-            <p><strong>Focus Areas:</strong> International Business, Supply Chain Management, Market Analysis</p>
-            <p><a href="https://github.com/YOUR_GITHUB_USERNAME/supply-chain-analysis" target="_blank">View Article / Presentation</a></p>
+            <h3>Digital Marketing Strategy Research Project</h3>
+            <p>Executed an independent study comparing traditional and digital marketing models using case studies of Coca-Cola and Shein. Evaluated market responsiveness, cost structure differences, and data-driven personalization in digital strategy.</p>
+            <p><strong>Key Skills:</strong> Digital Marketing, Brand Positioning, Consumer Insights, Market Analysis</p>
         </div>
     </section>
 
