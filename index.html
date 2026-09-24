@@ -6,44 +6,51 @@
   <title>Sylvia Zeng | Portfolio</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+      background: #f8f9fb;
       color: #222;
       line-height: 1.6;
     }
 
     header {
-      background-color: #1f2937;
+      background: linear-gradient(135deg, #1f2937, #374151);
       color: white;
       text-align: center;
-      padding: 70px 20px;
+      padding: 90px 20px;
+      animation: fadeIn 1.2s ease-in-out;
     }
 
     header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+      font-size: 48px;
+      margin: 0 0 10px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      font-weight: normal;
+      margin: 0 0 10px;
     }
 
     header p {
-      font-size: 20px;
-      margin: 5px 0;
-    }
-
-    .statement {
-      max-width: 750px;
-      margin: 25px auto 0;
+      max-width: 760px;
+      margin: 20px auto 0;
       font-size: 18px;
     }
 
     section {
-      max-width: 950px;
-      margin: 50px auto;
+      max-width: 1000px;
+      margin: 60px auto;
       padding: 0 25px;
+      animation: fadeUp 1s ease;
     }
 
-    h2 {
+    h2.section-title {
       font-size: 30px;
       margin-bottom: 25px;
       border-bottom: 3px solid #1f2937;
@@ -57,10 +64,16 @@
     }
 
     .skill {
-      background-color: white;
+      background: white;
       padding: 10px 18px;
-      border-radius: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 22px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 5px 14px rgba(0,0,0,0.12);
     }
 
     .projects {
@@ -69,19 +82,21 @@
     }
 
     .project {
-      background-color: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.14);
     }
 
     .project h3 {
       margin-top: 0;
-      font-size: 22px;
-    }
-
-    .project p {
-      margin-bottom: 10px;
+      font-size: 23px;
     }
 
     .project strong {
@@ -89,21 +104,41 @@
     }
 
     footer {
-      background-color: #1f2937;
+      background: #1f2937;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 35px 20px;
       margin-top: 60px;
     }
 
     footer a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      font-weight: bold;
     }
 
     footer a:hover {
       text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -112,20 +147,16 @@
 
   <header>
     <h1>Sylvia Zeng</h1>
+    <h2>Marketing Student at Rutgers Business School</h2>
 
-    <p>Marketing Student at Rutgers Business School</p>
-
-    <p>Branding | E-commerce | Consumer Insights</p>
-
-    <div class="statement">
-      I’m a Marketing student at Rutgers Business School who enjoys turning
-      consumer insights, data, and creative ideas into meaningful brand experiences.
-    </div>
+    <p>
+      I’m a Marketing student at Rutgers Business School with interests in
+      branding, e-commerce, digital marketing, and consumer behavior.
+    </p>
   </header>
 
-
   <section>
-    <h2>Skills</h2>
+    <h2 class="section-title">Skills</h2>
 
     <div class="skills">
       <div class="skill">Digital Marketing</div>
@@ -133,17 +164,18 @@
       <div class="skill">Consumer Research</div>
       <div class="skill">E-commerce</div>
       <div class="skill">SEO & Keyword Research</div>
+      <div class="skill">Market Analysis</div>
       <div class="skill">Competitor Analysis</div>
       <div class="skill">Amazon Seller Central</div>
       <div class="skill">Seller Sprite</div>
       <div class="skill">Microsoft Excel</div>
       <div class="skill">Canva</div>
+      <div class="skill">Leadership</div>
     </div>
   </section>
 
-
   <section>
-    <h2>Projects</h2>
+    <h2 class="section-title">Projects</h2>
 
     <div class="projects">
 
@@ -151,15 +183,15 @@
         <h3>Amazon E-commerce & SEO Project</h3>
 
         <p>
-          Conducted keyword and competitor research for furniture products using
-          Seller Sprite and Amazon marketplace data. Analyzed search volume,
-          ABA rankings, PPC costs, traffic share, and product relevance to narrow
-          more than 100 keywords into a focused SEO strategy.
+          Conducted keyword and competitor research using Seller Sprite and
+          Amazon marketplace data. Analyzed traffic share, ABA rankings,
+          monthly search volume, PPC costs, and product relevance to narrow
+          more than 100 search terms into approximately 10 high-priority keywords.
         </p>
 
         <p>
-          Created optimized product titles, bullet points, descriptions, and
-          keyword placements for Amazon product listings.
+          Created SEO-optimized product titles, bullet points, descriptions,
+          and keyword placements for Amazon furniture listings.
         </p>
 
         <strong>
@@ -167,20 +199,18 @@
         </strong>
       </div>
 
-
       <div class="project">
         <h3>Lumea Brand & Social Media Campaign</h3>
 
         <p>
           Developed a brand identity and digital marketing campaign for Lumea's
-          "Shine On" tote bag. Created a social media strategy designed to
-          encourage customers to personalize their tote bags and share their
-          own content online.
+          "Shine On" tote bag. Created a social media strategy focused on
+          user-generated content, customer participation, and community engagement.
         </p>
 
         <p>
-          The project helped me explore how user-generated content and community
-          engagement can build stronger relationships between customers and brands.
+          The project explored how branding and digital content can help create
+          stronger relationships between customers and brands.
         </p>
 
         <strong>
@@ -188,40 +218,39 @@
         </strong>
       </div>
 
-
       <div class="project">
-        <h3>Consumer Happiness & Marketing Research</h3>
+        <h3>Digital Marketing Research Project</h3>
 
         <p>
-          Explored how branding and different types of purchases influence
-          consumer happiness. Reviewed academic research on experiential and
-          material purchases, brand engagement in self-concept, and sustainable
-          fashion.
+          Conducted a comparative research study on traditional marketing and
+          digital marketing, focusing on communication style, consumer behavior,
+          cost structure, and market responsiveness.
         </p>
 
         <p>
-          The project helped me better understand how marketing can influence
-          consumer behavior and emotional satisfaction.
+          Used case studies of Coca-Cola and Shein to analyze real-world marketing
+          strategies, brand positioning, personalization, and data-driven decision making.
         </p>
 
         <strong>
-          Skills: Consumer Behavior, Academic Research, Marketing Analysis
+          Skills: Marketing Research, Consumer Behavior, Brand Strategy, Market Analysis
         </strong>
       </div>
 
     </div>
   </section>
 
-
   <footer>
     <h2>Let's Connect</h2>
 
     <p>
-      Rutgers Business School | Marketing
+      <a href="https://github.com/Ziliang25843" target="_blank">
+        GitHub
+      </a>
     </p>
 
     <p>
-      <a href="https://github.com/Ziliang25843" target="_blank">GitHub</a>
+      Rutgers Business School | Marketing
     </p>
 
     <p>© 2026 Sylvia Zeng</p>
